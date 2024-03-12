@@ -4,28 +4,8 @@
     <meta charset="utf-8" />
 
     <title>Number guessing game</title>
-
-    <style>
-      html {
-        font-family: sans-serif;
-      }
-
-      body {
-        width: 50%;
-        max-width: 800px;
-        min-width: 480px;
-        margin: 0 auto;
-      }
-
-      .form input[type="number"] {
-        width: 200px;
-      }
-
-      .lastResult {
-        color: white;
-        padding: 3px;
-      }
-    </style>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="scripts.js" />
   </head>
 
   <body>
@@ -55,18 +35,5 @@
       <p class="lastResult"></p>
       <p class="lowOrHi"></p>
     </div>
-
-    <script>
-      // Your JavaScript goes here
-
-      var numeroAleatorio = Math.floor(Math.random() * 100) + 1;
-
-      var palpites = document.querySelector(".palpites");
-      var ultimoResultado = document.querySelector(".ultimoResultado");
-      var baixoOuAlto = document.querySelector(".baixoOuAlto");
-
-      var contagemPalpites = 1;
-      var botaoReinicio;
-    </script>
   </body>
 </html>
